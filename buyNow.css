@@ -48,7 +48,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Header styles from your original CSS */
 header {
     height: 150px;
     width: 100vw;
@@ -59,7 +58,64 @@ header {
     border-bottom: 2px solid black;
 }
 
-/* ... (keeping all the header styles from your original CSS) ... */
+.logo {
+    height: 150px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #001F3F;
+    padding: 10px 5px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+.logo img:hover {
+    transform: scale(1.15); 
+    border-radius: 20px;
+}
+
+
+nav{
+    width: 80vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+ul li a {
+    margin: 0 5px 5px;
+    border: 2px solid wheat;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFC107;
+}
+
+#signup {
+    color: #ffe5b4ce;
+}
+
+#signup:hover {
+    background-color: #07c5ffbe;
+    color: #3a14aa;
+}
 
 main {
     padding: 2rem;
@@ -70,29 +126,6 @@ main {
     text-align: center;
     margin-bottom: 2rem;
     animation: fadeIn 1s ease-out;
-}
-
-.filters {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    animation: fadeIn 1s ease-out 0.2s backwards;
-}
-
-.filter-btn {
-    background: transparent;
-    border: 2px solid #FFE5B4;
-    color: #FFE5B4;
-    padding: 0.5rem 1.5rem;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.filter-btn:hover, .filter-btn.active {
-    background: #FFE5B4;
-    color: #001F3F;
 }
 
 .products-grid {
@@ -205,13 +238,24 @@ main {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .filters {
-        flex-wrap: wrap;
-        justify-content: center;
+    header {
+        flex-direction: row;
+        height: auto;
     }
 
-    .filter-btn {
-        width: calc(50% - 1rem);
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: center; 
+    }
+
+    ul li a {
+        text-align: center;
+    }
+
+    li{
+        margin: 10px;
     }
 
     .products-grid {
@@ -220,10 +264,15 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-    .filter-btn {
-        width: 100%;
+    ul {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
     }
 
+    ul li a {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
     .products-grid {
         grid-template-columns: 1fr;
     }
