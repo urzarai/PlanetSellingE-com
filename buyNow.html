@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="buyNow.css">
+    <title>Buy Planets - Planet Shop</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Planet Shop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" >About Us</a></li>
+                <li><a href="#">Sell Now</a></li>
+                <li><a href="#" id="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 class="page-title">Available Celestial Objects</h1>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="planets">Planets</button>
+            <button class="filter-btn" data-filter="stars">Stars</button>
+            <button class="filter-btn" data-filter="asteroids">Asteroids</button>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card planets">
+                <div class="product-image">
+                    <img src="mars.jpeg" alt="Mars">
+                    <div class="hover-info">
+                        <p>Diameter: 6,779 km</p>
+                        <p>Temperature: -63°C</p>
+                        <p>Type: Terrestrial</p>
+                    </div>
+                </div>
+                <h3>Mars</h3>
+                <p class="price">$999,999</p>
+                <button class="buy-button">Add to Cart</button>
+            </div>
+
+            <div class="product-card stars">
+                <div class="product-image">
+                    <img src="proxima.jpeg" alt="Proxima Centauri">
+                    <div class="hover-info">
+                        <p>Distance: 4.2 light-years</p>
+                        <p>Type: Red Dwarf</p>
+                        <p>Mass: 0.12 M☉</p>
+                    </div>
+                </div>
+                <h3>Proxima Centauri</h3>
+                <p class="price">$1,499,999</p>
+                <button class="buy-button">Add to Cart</button>
+            </div>
+
+            <div class="product-card asteroids">
+                <div class="product-image">
+                    <img src="ceres.jpeg" alt="Ceres">
+                    <div class="hover-info">
+                        <p>Size: 940 km</p>
+                        <p>Location: Asteroid Belt</p>
+                        <p>Type: Dwarf Planet</p>
+                    </div>
+                </div>
+                <h3>Ceres</h3>
+                <p class="price">$599,999</p>
+                <button class="buy-button">Add to Cart</button>
+            </div>
+
+            <div class="product-card planets">
+                <div class="product-image">
+                    <img src="venus.jpeg" alt="Venus">
+                    <div class="hover-info">
+                        <p>Diameter: 12,104 km</p>
+                        <p>Temperature: 462°C</p>
+                        <p>Type: Terrestrial</p>
+                    </div>
+                </div>
+                <h3>Venus</h3>
+                <p class="price">$899,999</p>
+                <button class="buy-button">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="cart-popup">
+        <h3>Added to Cart!</h3>
+        <p>Continue exploring or proceed to checkout</p>
+    </div>
+</body>
+</html>

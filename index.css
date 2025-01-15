@@ -81,11 +81,11 @@ a:hover {
 }
 
 #signup {
-    background-color: #07c5ffbe;
     color: #ffe5b4ce;
 }
 
 #signup:hover {
+    background-color: #07c5ffbe;
     color: #3a14aa;
 }
 
