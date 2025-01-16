@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sellNow.css">
+    <title>Sell Celestial Objects - Planet Shop</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/logo.jpg" alt="Planet Shop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="buyNow.html">Buy Now</a></li>
+                <li><a href="sellNow.html" class="active">Sell Now</a></li>
+                <li><a href="#" >Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-section">
+            <h1>Sell Your Celestial Treasures</h1>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="icon">🌟</div>
+                    <h3>List Your Object</h3>
+                    <p>Complete our detailed listing form to showcase your celestial object</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">📸</div>
+                    <h3>Add Images</h3>
+                    <p>Upload high-quality images to attract potential buyers</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">💰</div>
+                    <h3>Set Your Price</h3>
+                    <p>Choose competitive pricing based on market trends</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🚀</div>
+                    <h3>Quick Listing</h3>
+                    <p>Get your celestial object listed in the marketplace within minutes</p>
+                </div>
+            </div>
+
+            <div class="listing-form">
+                <h2>Create Your Listing</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="object-type">Object Type</label>
+                        <select id="object-type" required>
+                            <option value="">Select Type</option>
+                            <option value="planet">Planet</option>
+                            <option value="star">Star</option>
+                            <option value="asteroid">Asteroid</option>
+                            <option value="comet">Comet</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="object-name">Object Name</label>
+                        <input type="text" id="object-name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="diameter">Diameter (km)</label>
+                            <input type="number" id="diameter" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="temperature">Temperature (°C)</label>
+                            <input type="number" id="temperature" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Price ($)</label>
+                        <input type="number" id="price" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="images">Upload Images</label>
+                        <div class="upload-area">
+                            <input type="file" id="images" accept="image/*" multiple>
+                            <p>Drag & drop images or click to upload</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Create Listing</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="success-popup">
+            <h3>Listing Created Successfully!</h3>
+            <p>Your celestial object is now available in the marketplace</p>
+        </div>
+    </main>
+</body>
+</html>

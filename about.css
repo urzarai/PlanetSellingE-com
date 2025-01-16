@@ -1,3 +1,18 @@
+@keyframes navGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 229, 180, 0.3);
+        border-color: rgba(255, 229, 180, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 229, 180, 0.5);
+        border-color: rgba(255, 229, 180, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 229, 180, 0.3);
+        border-color: rgba(255, 229, 180, 0.3);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -61,20 +76,13 @@ ul li a {
     padding: 5px 15px;
     border-radius: 50px;
     text-decoration: none;
+    animation: navGlow 3s ease-in-out infinite;
 }
 
 a:hover {
     color: #FFC107;
 }
 
-#signup {
-    background-color: #07c5ffbe;
-    color: #ffe5b4ce;
-}
-
-#signup:hover {
-    color: #3a14aa;
-}
 
 main {
     margin: 30px;
@@ -93,7 +101,7 @@ main {
 }
 
 .feature-box {
-    background-color: #002F5F;
+    background: rgba(255, 229, 180, 0.1);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -120,8 +128,6 @@ main {
 
 .feature-box:hover {
     transform: scale(1.1);
-    background-color: #07c5ffbe;
-    color: #4204b6df; 
 }
 
 @media screen and (max-width: 768px) {
