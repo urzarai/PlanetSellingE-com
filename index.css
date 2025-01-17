@@ -76,8 +76,7 @@
 body {
     background-color: #001F3F;
     background-image: radial-gradient(circle at center, #002855 0%, #001F3F 100%);
-    
-    
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 
