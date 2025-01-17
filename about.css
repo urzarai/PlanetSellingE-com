@@ -166,12 +166,9 @@ main {
 }
 
 @media screen and (max-width: 480px) {
-    header {
-        flex-direction: column;
-    }
 
     ul {
-        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        grid-template-columns: 1fr; 
     }
 
     ul li a {
